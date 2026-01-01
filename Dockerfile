@@ -1,4 +1,4 @@
-FROM klakegg/hugo:0.111.3-ext-alpine
+FROM klakegg/hugo:ext-alpine
 
 WORKDIR /src
 

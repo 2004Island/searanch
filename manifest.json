@@ -1,0 +1,15 @@
+{
+  "name": "My Documentation Site",
+  "short_name": "My Documentation Site",
+  "start_url": "/searanch/",
+  "scope": "/searanch/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "/searanch/favicon.svg",
+      "sizes": "512x512"
+    }
+  ]
+}

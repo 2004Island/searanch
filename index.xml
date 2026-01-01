@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>My Documentation Site</title><link>https://2004Island.github.io/searanch/</link><description>Recent content on My Documentation Site</description><generator>Hugo</generator><language>en-us</language><atom:link href="https://2004Island.github.io/searanch/index.xml" rel="self" type="application/rss+xml"/><item><title>Introduction</title><link>https://2004Island.github.io/searanch/docs/getting-started/introduction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://2004Island.github.io/searanch/docs/getting-started/introduction/</guid><description>&lt;h1 id="introduction"&gt;Introduction&lt;a class="anchor" href="#introduction"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;This is your first documentation page.&lt;/p&gt;
+&lt;h2 id="what-is-this-site"&gt;What is this site?&lt;a class="anchor" href="#what-is-this-site"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;This is a collaborative documentation site where anyone can contribute content through GitHub pull requests.&lt;/p&gt;
+&lt;h2 id="features"&gt;Features&lt;a class="anchor" href="#features"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Easy to contribute&lt;/strong&gt;: Just submit a PR with your markdown content&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beautiful theme&lt;/strong&gt;: Using the Hugo Book theme&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Automatic deployment&lt;/strong&gt;: Changes are automatically published via GitHub Actions&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search enabled&lt;/strong&gt;: Full-text search across all documentation&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>Writing Guide</title><link>https://2004Island.github.io/searanch/docs/contributing/writing-guide/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://2004Island.github.io/searanch/docs/contributing/writing-guide/</guid><description>&lt;h1 id="writing-guide"&gt;Writing Guide&lt;a class="anchor" href="#writing-guide"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="creating-a-new-page"&gt;Creating a New Page&lt;a class="anchor" href="#creating-a-new-page"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Create a new markdown file in the appropriate section under &lt;code&gt;content/docs/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Add front matter at the top:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-yaml" data-lang="yaml"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;title&lt;/span&gt;: &lt;span style="color:#e6db74"&gt;&amp;#34;Your Page Title&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;weight&lt;/span&gt;: &lt;span style="color:#ae81ff"&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;---&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol start="3"&gt;
+&lt;li&gt;Write your content in Markdown&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="markdown-basics"&gt;Markdown Basics&lt;a class="anchor" href="#markdown-basics"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="headers"&gt;Headers&lt;a class="anchor" href="#headers"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;# H1 Header
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;## H2 Header
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;### H3 Header&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="links"&gt;Links&lt;a class="anchor" href="#links"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;[&lt;span style="color:#f92672"&gt;Link text&lt;/span&gt;](&lt;span style="color:#a6e22e"&gt;https://example.com&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="code-blocks"&gt;Code Blocks&lt;a class="anchor" href="#code-blocks"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Use triple backticks for code:
+def hello():
+print(&amp;ldquo;Hello, world!&amp;rdquo;)&lt;/p&gt;
+&lt;pre tabindex="0"&gt;&lt;code&gt;&lt;/code&gt;&lt;/pre&gt;&lt;h3 id="images"&gt;Images&lt;a class="anchor" href="#images"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-markdown" data-lang="markdown"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;![&lt;span style="color:#f92672"&gt;Alt text&lt;/span&gt;](&lt;span style="color:#a6e22e"&gt;/images/image.png&lt;/span&gt;)&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="organizing-content"&gt;Organizing Content&lt;a class="anchor" href="#organizing-content"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The Book theme uses the file structure to create the menu. Files are ordered by the &lt;code&gt;weight&lt;/code&gt; parameter in the front matter (lower numbers appear first).&lt;/p&gt;</description></item><item><title>How to Contribute</title><link>https://2004Island.github.io/searanch/docs/contributing/how-to-contribute/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://2004Island.github.io/searanch/docs/contributing/how-to-contribute/</guid><description>&lt;h1 id="how-to-contribute"&gt;How to Contribute&lt;a class="anchor" href="#how-to-contribute"&gt;#&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;a class="anchor" href="#prerequisites"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A GitHub account&lt;/li&gt;
+&lt;li&gt;Docker installed on your computer&lt;/li&gt;
+&lt;li&gt;Git installed on your computer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="step-by-step-process"&gt;Step-by-Step Process&lt;a class="anchor" href="#step-by-step-process"&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;h3 id="1-fork-the-repository"&gt;1. Fork the Repository&lt;a class="anchor" href="#1-fork-the-repository"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Click the &amp;ldquo;Fork&amp;rdquo; button at the top right of the GitHub repository page.&lt;/p&gt;
+&lt;h3 id="2-clone-your-fork"&gt;2. Clone Your Fork&lt;a class="anchor" href="#2-clone-your-fork"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git clone https://github.com/YOUR-USERNAME/my-hugo-site.git
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;cd my-hugo-site&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="3-run-locally-with-docker"&gt;3. Run Locally with Docker&lt;a class="anchor" href="#3-run-locally-with-docker"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;docker-compose up&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Visit http://localhost:1313 to see your local version.&lt;/p&gt;
+&lt;h3 id="4-create-a-new-branch"&gt;4. Create a New Branch&lt;a class="anchor" href="#4-create-a-new-branch"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-bash" data-lang="bash"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;git checkout -b add-my-documentation&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id="5-add-your-content"&gt;5. Add Your Content&lt;a class="anchor" href="#5-add-your-content"&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Create a new markdown file in the appropriate section under &lt;code&gt;content/docs/&lt;/code&gt;.&lt;/p&gt;</description></item></channel></rss>

@@ -1,6 +1,6 @@
-baseURL = 'https://2004Island.github.io/searanch/'
+baseURL = '/'
 languageCode = 'en-us'
-title = 'My Documentation Site'
+title = 'AMD GPU AI Lab'
 theme = 'hugo-book'
 
 # Disable Hugo modules (use theme as git submodule instead)

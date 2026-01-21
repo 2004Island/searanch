@@ -1,0 +1,26 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: searanch-docs
+  annotations:
+    # Uncomment and adjust based on your ingress controller
+    # nginx.ingress.kubernetes.io/rewrite-target: /
+    # cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: docs.example.com  # Change to your domain
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: searanch-docs
+                port:
+                  number: 80
+  # Uncomment for TLS
+  # tls:
+  #   - hosts:
+  #       - docs.example.com
+  #     secretName: searanch-docs-tls
